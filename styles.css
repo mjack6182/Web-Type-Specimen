@@ -1,0 +1,530 @@
+
+html{
+    font-family: "Alumni Sans", sans-serif;
+    background-color: #F9F6EE;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f0;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    color: #F9F6EE;
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Alumni Sans', sans-serif;
+    z-index: 100;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-links li {
+    margin: 0;
+}
+
+nav .nav-links a {
+    color: #F9F6EE;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: opacity 0.2s ease;
+}
+
+nav .nav-links a:hover {
+    opacity: 0.7;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alumni {
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0.85;
+    letter-spacing: -0.02em;
+    color: #000;
+    text-transform: uppercase;
+    padding-left: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+.sans-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding-left: 320px;
+}
+
+.sans {
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0.85;
+    letter-spacing: -0.02em;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+}
+
+.black-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #000;
+    z-index: 1;
+}
+
+.introduction {
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    z-index: 10;
+    background-color: #F9F6EE;
+    display: flex;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.vertical-heading {
+    font:"Alumni Sans Collegiate One SC";
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+}
+
+.intro-content {
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.Glyphs {
+    min-height: 100vh;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #F9F6EE;
+    padding: 4rem 2rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Glyphs h2 {
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
+}
+
+.Glyphs .glyph-grid {
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+}
+
+.Glyphs h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.glyph-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.glyph-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    font-size: 2rem;
+    background-color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glyph-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Body-Copy {
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    z-index: 30;
+    background-color: #121212;
+    color: #F9F6EE;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Body-Copy h2 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 3rem;
+}
+
+.body-copy-container {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.copy-variant-1 {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.copy-variant-2 {
+    font-family: 'Alumni Sans SC', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.copy-variant-3 {
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.Large-text {
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    z-index: 40;
+    background-color: #F9F6EE;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.Large-text h2 {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.large-text-1 {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 12rem;
+    font-weight: 900;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.large-text-2 {
+    font-family: 'Alumni Sans Inline One', sans-serif;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.large-text-3 {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.large-text-4 {
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.large-text-5 {
+    font-family: 'Alumni Sans SC', sans-serif;
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.Experiments {
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    z-index: 50;
+    background-color: #F9F6EE;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Experiments h2 {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100px;
+    margin-left: calc(-50vw + 50%);
+    background-color: #000;
+    color: #F9F6EE;
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    clip-path: polygon(0 0, calc(100% - 4rem) 50%, 100% 0, 100% 100%, 0 100%);
+    box-sizing: border-box;
+}
+
+/* Experiments ex-1 section */
+.ex-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+
+.ex-1 p {
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-size: 10rem;
+    line-height: 0.85;
+    margin: 0;
+    padding: 0;
+    /* color: #000; */
+}
+
+.ex-1 p:nth-child(1) {
+    text-align: left;
+}
+
+.ex-1 p:nth-child(2) {
+    text-align: center;
+}
+
+.ex-1 p:nth-child(3) {
+    text-align: right;
+}
+
+/* Experiments ex-2 section - Cards */
+.ex-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.card {
+    background-color: #121212;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 400px;
+    flex: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #F9F6EE;
+    text-decoration: underline;
+}
+
+.card p {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #F9F6EE;
+}
+
+/* Experiments ex-3 section */
+.ex-3 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    overflow: visible;
+}
+
+.ex-3::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #2D5016;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.ex-3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 120px;
+    background-color: #000;
+    z-index: 2;
+}
+
+.ex-3 h1 {
+    position: relative;
+    z-index: 3;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #F9F6EE;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    color: #F9F6EE;
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+footer .footer-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+footer .footer-nav a {
+    color: #F9F6EE;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: opacity 0.2s ease;
+}
+
+footer .footer-nav a:hover {
+    opacity: 0.7;
+}
+
+footer .download-link {
+    color: #F9F6EE;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: opacity 0.2s ease;
+}
+
+footer .download-link:hover {
+    opacity: 0.7;
+}
