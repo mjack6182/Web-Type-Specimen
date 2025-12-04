@@ -322,6 +322,10 @@ nav .nav-links li {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    position: relative;
+    top: auto;
+    min-height: auto;
+    overflow: visible;
 }
 
 .Large-text h2 {
@@ -377,10 +381,12 @@ nav .nav-links li {
 
 .large-text-5 {
     font-family: 'Alumni Sans SC', sans-serif;
-    font-size: 25rem;
+    font-size: clamp(12rem, 22vw, 22rem);
     font-weight: 700;
-    line-height: 0.9;
+    line-height: 0.95;
     text-transform: uppercase;
+    text-align: center;
+    word-break: break-word;
 }
 
 @keyframes shadow-dance {
